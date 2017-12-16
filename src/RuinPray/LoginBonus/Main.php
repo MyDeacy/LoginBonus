@@ -59,6 +59,6 @@ class Main extends PluginBase {
 		$key = mt_rand(1, $max);
 		$data = $this->items[$key];
 		$player->getInventory()->addItem($item = Item::get($data["id"], $data["meta"], $data["amount"]));
-		$player->sendMessage(">>Login Bonus! \n>>Distributed a ".$item->getName()." to you!");
+		$player->sendMessage(">>ログインボーナス！! \n>>".$item->getName()." を配布しました！");
 	}
 }
